@@ -6,8 +6,10 @@ import threading
 # ============================================================
 # CONFIGURACIÓN BINANCE
 # ============================================================
-API_KEY = "TU_API_KEY"
-API_SECRET = "TU_API_SECRET"
+import os
+API_KEY = os.getenv("API_KEY")
+API_SECRET = os.getenv("API_SECRET")
+
 
 client = Client(API_KEY, API_SECRET)
 
